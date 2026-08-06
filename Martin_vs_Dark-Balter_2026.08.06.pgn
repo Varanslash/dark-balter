@@ -1,0 +1,36 @@
+[Event "Bot vs Bot"]
+[Site "Chess.com"]
+[Date "2026.08.06"]
+[Round "?"]
+[White "Martin"]
+[Black "Dark Balter"]
+[Result "0-1"]
+[TimeControl "-"]
+[BlackElo "250"]
+[WhiteElo "250"]
+[Termination "by checkmate"]
+[ECO "A04"]
+[EndDate "2026.08.06"]
+[Link "https://www.chess.com/game/computer/1893866362"]
+
+1. d4 c5 2. Nf3 Qb6 3. Na3 a5 4. Bh6 gxh6 5. g4 e5 6. Nc4 Qa6 7. Nb6 Qxb6 8. h3
+cxd4 9. Qc1 Qd6 10. Rh2 Bg7 11. c4 Qc7 12. Qb1 Qxc4 13. Rg2 Qc6 14. Qf5 Kd8 15.
+Nxd4 exd4 16. Qf3 Qc7 17. Rg1 f6 18. Qe3 Qb6 19. Qb3 Qc7 20. a4 Qc6 21. Bg2 Qd6
+22. Qxg8+ Rxg8 23. O-O-O Re8 24. Rdf1 Rxe2 25. f4 Qb6 26. Re1 Qxb2+ 27. Kd1 Re3
+28. Rxe3 b5 29. g5 d5 30. axb5 Bb7 31. h4 dxe3 32. Ke1 Qd2+ 33. Kf1 Ra6 34. h5
+Rd6 35. Bh3 Qb2 36. Rg2 Qb3 37. Ke1 Ra6 38. bxa6 Bxa6 39. Rd2 Qc3 40. Be6 Qb4
+41. Bh3 Ke8 42. Bd7+ Kd8 43. Bb5 Bh8 44. Bxa6 Qxd2+ 45. Kf1 Nc6 46. Be2 Ke7 47.
+gxf6+ Kf8 48. Kg2 Qxe2+ 49. Kg1 Qd2 50. f5 Kg8 51. f7+ Kf8 52. Kh1 Nb4 53. f6
+Qa2 54. Kg1 Nd3 55. Kh1 Bxf6 56. Kg1 Bg7 57. Kh1 Nc5 58. Kg1 Bc3 59. Kh1 Nb3 60.
+Kg1 e2 61. Kg2 Qb2 62. Kf2 d4 63. Kf3 d3 64. Ke4 Qa1 65. Kxd3 Qa4 66. Kxe2 Qa2+
+67. Ke3 Qg2 68. Kf4 Nd4 69. Ke5 Nb5+ 70. Kf4 Nc7 71. Ke3 Bd2+ 72. Kd3 Qg5 73.
+Ke2 Bc1 74. Kd3 Qd2+ 75. Kc4 Nd5 76. Kc5 Ne3 77. Kb6 Ng4 78. Kb5 Qc3 79. Ka6 Be3
+80. Kb7 Nf2 81. Kb8 Ne4 82. Kb7 Qc1 83. Kb8 Kxf7 84. Kb7 Kf8 85. Ka6 Qc3 86. Kb7
+Bf2 87. Ka6 Qc4+ 88. Kb7 Kg7 89. Kb8 Kf6 90. Kb7 Ng3 91. Kb8 Be3 92. Kb7 Kf5 93.
+Kb8 Qe6 94. Kc7 Ne2 95. Kb8 Kg4 96. Kb7 Ng1 97. Kc7 Kxh5 98. Kb7 Bb6 99. Ka6 Kh4
+100. Kb5 Kg3 101. Ka6 Kg4 102. Kb5 Qe3 103. Ka4 Qd2 104. Kb3 Bc5 105. Kc4 Bf8
+106. Kb5 Qf2 107. Kc4 Qc2+ 108. Kb5 Qb2+ 109. Ka6 Ne2 110. Kxa5 h5 111. Ka6 h4
+112. Ka7 Bd6 113. Ka6 Nd4 114. Ka7 Kg3 115. Ka6 Be7 116. Ka7 Qb1 117. Ka8 Nb5
+118. Kb8 Qc2 119. Kb7 Kf4 120. Kb6 Nd6 121. Ka7 Qe4 122. Ka6 Bg5 123. Kb6 h5
+124. Kc5 Qe6 125. Kc6 Ke4 126. Kc7 Qa2 127. Kb6 Kd4 128. Kc6 Bd8 129. Kd7 Qf7+
+130. Kxd8 Ne8 131. Kc8 Qc7# 0-1
