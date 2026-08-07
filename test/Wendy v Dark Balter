@@ -1,0 +1,23 @@
+[Event "Bot vs Bot"]
+[Site "Chess.com"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Wendy"]
+[Black "Dark Balter"]
+[Result "1/2-1/2"]
+[TimeControl "3600"]
+[WhiteElo "1500"]
+[BlackElo "900"]
+[Termination "Game drawn by repetition"]
+[ECO "A40"]
+[EndDate "2026.08.07"]
+[Link "https://www.chess.com/game/computer/1900278256"]
+
+1. d4 a5 2. e4 Nh6 3. Bxh6 gxh6 4. d5 Bg7 5. c3 Ra7 6. a3 Rf8 7. d6 cxd6 8. Qg4
+Rg8 9. Nd2 e6 10. Nc4 Bxc3+ 11. bxc3 Rxg4 12. f3 Qh4+ 13. g3 Rxg3 14. Nxd6+ Kf8
+15. O-O-O Qg5+ 16. Kb2 Rxg1 17. Rxg1 Qxg1 18. Nxc8 Ra8 19. f4 Qh1 20. Nd6 Qf3
+21. Re1 Qf2+ 22. Be2 Qxe1 23. Bb5 Qd2+ 24. Kb3 Qxd6 25. e5 Qd5+ 26. c4 a4+ 27.
+Kb2 Qc5 28. h4 Qb6 29. h5 Ke8 30. Ka2 Kf8 31. Kb2 Na6 32. Kc2 Nc5 33. Kd1 Qa5
+34. Kc2 Qb6 35. Kc3 Ne4+ 36. Kd3 Nf2+ 37. Ke2 Ke7 38. Kf1 Nd1 39. Ke2 Nc3+ 40.
+Kf3 Na2 41. Kg3 Rg8+ 42. Kf3 Qa5 43. Ke4 Nc3+ 44. Kd3 Rg3+ 45. Kc2 Rg2+ 46. Kd3
+Rg3+ 47. Kc2 Rg2+ 48. Kd3 Rg3+ 1/2-1/2
