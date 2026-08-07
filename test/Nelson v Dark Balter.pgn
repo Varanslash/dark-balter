@@ -1,0 +1,25 @@
+[Event "Bot vs Bot"]
+[Site "Chess.com"]
+[Date "2026.08.07"]
+[Round "?"]
+[White "Nelson"]
+[Black "Dark Balter"]
+[Result "0-1"]
+[TimeControl "3600"]
+[WhiteElo "1300"]
+[BlackElo "900"]
+[Termination "mantithegamer won by checkmate"]
+[ECO "B00"]
+[EndDate "2026.08.07"]
+[Link "https://www.chess.com/game/computer/1900158500?move=0"]
+
+e4 g5 2. Qh5 d5 3. Qxg5 dxe4 4. Qe5 f6 5. Qh5+ Kd7 6. Qd5+ Ke8 7. Qh5+ Kd7 8.
+Qd5+ Ke8 9. Nc3 c6 10. Qh5+ Kd7 11. d4 Qc7 12. h3 Qb6 13. Qg4+ Kc7 14. Bf4+ e5
+Bxe5+ fxe5 16. Qh4 Qxb2 17. Nxe4 Qxa1+ 18. Ke2 Qxd4 19. Nf3 Qc4+ 20. Ke1
+Bb4+ 21. c3 Bxc3+ 22. Nfd2 Qd4 23. Be2 Bxd2+ 24. Nxd2 Qxh4 25. g3 Qb4 26. f4 e4
+a3 Qa5 28. Bg4 Bxg4 29. hxg4 b5 30. Ke2 Qa4 31. Nxe4 Qxe4+ 32. Kd2 Qxh1 33.
+a4 Qh2+ 34. Kd1 bxa4 35. f5 Qxg3 36. Ke2 Qxg4+ 37. Ke1 Qh3 38. Kd1 Kb7 39. Kc1
+Qh5 40. f6 Qh1+ 41. Kd2 Qd5+ 42. Ke1 Qa2 43. Kf1 Kc7 44. f7 Nh6 45. f8=Q Qa1+
+Kg2 Qb2+ 47. Qf2 Qb7 48. Qd4 c5+ 49. Kh2 cxd4 50. Kg1 Nc6 51. Kg2 Qb4 52.
+Kh1 Ng4 53. Kg2 Qc3 54. Kf1 Kb6 55. Kg2 Ne3+ 56. Kh3 Qa3 57. Kg3 Rhf8 58. Kh3
+Nb8 59. Kh4 h6 60. Kh5 Qd6 61. Kh4 Qh2# 0-1
