@@ -8,7 +8,7 @@ legal_show = input("Do you want to see all legal moves? (y/n) >>> ")
 name = input("What is your name? >>> ")
 elo = input("What is your elo? >>> ")
 showfen = input("Show FEN? (y/n) >>> ")
-endnaming = f"{name} ({elo}) vs Dark Balter (900)"
+endnaming = f"{name} ({elo}) vs Dark Balter (1500)"
 turn = 0
 
 peece = {
@@ -146,5 +146,5 @@ while not board.is_game_over():
         print(f"Balter played {turn}. {bpgn_m}")
         board.push(b_move)
 
-print(f"{name} ({elo}) vs Dark Balter (900): {board.result()}")
+print(f"{name} ({elo}) vs Dark Balter (1500): {board.result()}")
 print(pgn)
