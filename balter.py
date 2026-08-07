@@ -4,10 +4,10 @@ import random
 # Create a brand new board
 board = chess.Board()
 pgn = []
-legal_show = input("Do you want to see all legal moves? (y/n): ")
-name = input("What is your name? >>>")
-elo = input("What is your elo? >>>")
-showfen = input("Show FEN? (y/n)")
+legal_show = input("Do you want to see all legal moves? (y/n) >>> ")
+name = input("What is your name? >>> ")
+elo = input("What is your elo? >>> ")
+showfen = input("Show FEN? (y/n) >>> ")
 endnaming = f"{name} ({elo}) vs Dark Balter (900)"
 turn = 0
 
@@ -40,75 +40,67 @@ def eval_board(board):
                 score -= value  # Black pieces subtract points
     return score
 
-def depth_eval(board, depth):
-    moves = list(board.legal_moves)
-    abs_bestscore = 29999999
-    abs_bestmoves = []
-    pushed = 0
+def minimax(board, depth, alpha, beta):
+    if board.is_game_over() or depth == 0:
+        return eval_board(board)
 
-    for move in moves:
-        if board.turn == chess.WHITE:
-            bestscore = -29999999
-        else:
-            bestscore = 29999999
-        bestmove = []
-        pushed = 1
-        board.push(move)
+    if board.turn == chess.WHITE:
+        bestscore = -29999999
+        for move in board.legal_moves:
+            board.push(move)
+            score = minimax(board, depth - 1, alpha, beta)
+            board.pop()
+            bestscore = max(bestscore, score)
+            alpha = max(alpha, bestscore)
 
-        for _ in range(depth - 1):
-            if board.is_game_over():
+            if alpha >= beta:
                 break
 
-            loop_moves = list(board.legal_moves)
+        return bestscore
 
-            if board.turn == chess.WHITE:
-                bestscore = -29999999
-                bestmove = []
-                for lmove in loop_moves:
-                    board.push(lmove)
-                    score = eval_board(board)
-                    board.pop()
-                    if score > bestscore:
-                        bestscore = score
-                        bestmove = [lmove]
-                    elif score == bestscore:
-                        bestmove.append(lmove)
-                    else:
-                        continue
-                sb_move = random.choice(bestmove)
-                board.push(sb_move)
-
-            else:
-                bestscore = 29999999
-                bestmove = []
-                for lmove in loop_moves:
-                    board.push(lmove)
-                    score = eval_board(board)
-                    board.pop()
-                    if score < bestscore:
-                        bestscore = score
-                        bestmove = [lmove]
-                    elif score == bestscore:
-                        bestmove.append(lmove)
-                    else:
-                        continue
-                swb_move = random.choice(bestmove)
-                board.push(swb_move)
-            pushed += 1
-
-        score = eval_board(board)
-
-        for _ in range(pushed):
+    else:
+        bestscore = 29999999
+        for move in board.legal_moves:
+            board.push(move)
+            score = minimax(board, depth - 1, alpha, beta)
             board.pop()
+            bestscore = min(bestscore, score)
+            beta = min(bestscore, beta)
 
-        if score < abs_bestscore:
-            abs_bestscore = score
-            abs_bestmoves = [move]
-        elif score == abs_bestscore:
-            abs_bestmoves.append(move)
+            if alpha >= beta:
+                break
 
-    res = random.choice(abs_bestmoves)
-    return res
+        return bestscore
+
+
+def depth_eval(board, depth):
+    alpha = -29999999
+    beta = 29999999
+    moves = list(board.legal_moves)
+    maximizing = board.turn == chess.WHITE
+
+    bestscore = -29999999 if maximizing else 29999999
+    bestmoves = []
+
+    for move in moves:
+        board.push(move)
+        score = minimax(board, depth - 1, alpha, beta)
+        board.pop()
+
+        if maximizing:
+            if score > bestscore:
+                bestscore = score
+                bestmoves = [move]
+            elif score == bestscore:
+                bestmoves.append(move)
+        else:
+            if score < bestscore:
+                bestscore = score
+                bestmoves = [move]
+            elif score == bestscore:
+                bestmoves.append(move)
+
+    return random.choice(bestmoves)
 
 while not board.is_game_over():
     turn += 0.5
@@ -137,11 +129,11 @@ while not board.is_game_over():
             print("Invalid move. Please try again.")
     else:
         before = board.fen()
-        b_move = depth_eval(board, 5)
+        b_move = depth_eval(board, 3)
         after = board.fen()
+
         if showfen == "y" or "Y":
             print(f"Before: {before} \n After: {after}")
-
 
         if before != after:
             print("SEARCH CORRUPTED THE BOARD")
@@ -153,7 +145,6 @@ while not board.is_game_over():
         pgn.append(bpgn_m)
         print(f"Balter played {turn}. {bpgn_m}")
         board.push(b_move)
-        print(board)
 
 print(f"{name} ({elo}) vs Dark Balter (900): {board.result()}")
 print(pgn)
